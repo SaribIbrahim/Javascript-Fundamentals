@@ -10,7 +10,7 @@ Each file covers a different topic or concept I'm learning, explained through ha
 | File Name     | Description                        |
 |--------------|------------------------------------|
 | `Array-Basics.js`      | Array basics: spread, rest, addition |
-| `Loops.js`    | `map()` function and loop examples   |
+| `Loops.js`    | `map()` and `filter()` functions    |
 
 ---
 
