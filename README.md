@@ -1,33 +1,33 @@
-# 🧠 Node Practice
+# 📘 JavaScript Fundamentals
 
-This repository contains my daily Node.js and JavaScript practice.  
-Each file covers a different topic or concept I'm learning, explained through hands-on code examples.
-
----
-
-## 📁 Files & Topics
-
-| File Name     | Description                        |
-|--------------|------------------------------------|
-| `Array-Basics.js`      | Array basics: spread, rest, addition |
-| `Loops.js`    | `map()`, `filter()` and `find` functions    |
+This repository contains my foundational JavaScript practice — including topics like arrays, functions, loops, destructuring, and ES6 methods like `map()`, `filter()`, and `find()`.
 
 ---
 
-## 🔥 Why This Repo?
+## 📁 Files & Concepts Covered
 
-I'm using this as my learning log to:
-- Reinforce key JS/Node concepts
-- Practice writing clean, working code
-- Track my progress over time
+| File Name         | Description                                       |
+|------------------|---------------------------------------------------|
+| `array-basics.js` | Working with arrays, spread/rest, references     |
+| `loops.js`        | Practicing `map()`, `filter()`, `find()` methods |
+
+---
+
+## 🎯 Purpose
+
+This repo helps me:
+
+- Reinforce JS fundamentals
+- Write clean, working code through practice
+- Track my learning progress
 
 ---
 
 ## 🚀 How to Run
 
-If you want to run any file:
+You can run any file using Node.js:
 
 ```bash
 node filename.js
-# e.g.
-node loops.js
+# example:
+node array-basics.js
