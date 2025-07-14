@@ -242,6 +242,43 @@ let products = [
 
   let foundStudent=testStudents3.find(item=> item.marks>60);
   console.log(foundStudent);
+
+  // final practice problem of map,filter and find
+  let finalStudents = [
+    { name: "Ali", marks: 92, city: "Lahore", passed: true },
+    { name: "Sara", marks: 76, city: "Karachi", passed: true },
+    { name: "John", marks: 45, city: "Islamabad", passed: false },
+    { name: "Areeba", marks: 88, city: "Lahore", passed: true },
+    { name: "Bilal", marks: 59, city: "Multan", passed: true },
+    { name: "Hassan", marks: 39, city: "Lahore", passed: false }
+  ];
+  
+  let filteredFinalStudents=finalStudents.filter(item=> item.passed==true);
+
+  function showStatus(obj){
+    if(obj.marks>=80){
+      return "Distinction"
+    }
+    else{
+      return "Passed"
+    }
+  };
+
+  let mappedFinalStudents=filteredFinalStudents.map(item=>{
+    return{
+      name:item.name,
+      marks:item.marks,
+      status:showStatus(item)
+    }
+  });
+  console.log(mappedFinalStudents);
+  
+  
+
+  let cityStudents=filteredFinalStudents.find(
+    item=>item.city=="Lahore");
+  console.log(cityStudents);
+  
   
   
   
