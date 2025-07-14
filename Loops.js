@@ -214,6 +214,14 @@ let products = [
     }
   });
   console.log("Passed Students:",mappedPassedStudents);
+
+  //find function
+  // iterates over array and returns first element matching the condition
+
+  let myArray=[1,2,3,4,5];
+  let foundElement=myArray.find(item=> item>3)
+  console.log(foundElement);
+  
   
   
   
