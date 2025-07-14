@@ -119,6 +119,103 @@ let products = [
     }
   });
   console.log(mappedMixPlayers);
+
+  //another mix practice problem of map and filter
+  let testStudents=[{
+    name:"Ali",
+    marks:89
+  },{
+    name:"Sana",
+    marks:35
+  },{
+    name:"John",
+    marks:65
+  },{
+    name:"Areeba",
+    marks:95
+  },{
+    name:"Karan",
+    marks:45
+  }];
+
+  let filteredStudents=testStudents.filter(items =>
+    items.marks>=50
+  );
+  function evaluateStudents(students){//passing whole obj as parameter
+    if(students.marks>=90){//now checking e.g object.marks
+        return "A+";
+    }else if(students.marks>=80 && students.marks<90){
+        return "A";
+    }else if(students.marks>=70 && students.marks<80){
+        return "B";
+    }else if(students.marks>=60 && students.marks<70){
+        return "C";
+    }else if(students.marks>=50 && students.marks<60){
+        return "D";
+    }
+  }
+
+  let mappedStudents=filteredStudents.map((items)=>{
+    return{
+        name:items.name,
+        result:"Passed",
+        grade:evaluateStudents(items)//passing whole obj as parameter i.e items is whole obj
+  }});
+  console.log("Mapped Students:",mappedStudents);
+
+
+  //another mix practice problem of map and filter
+  let testStudents2=[{
+    name:"Ali",
+    marks:89
+  },{
+    name:"Sana",
+    marks:35
+  },{
+    name:"John",
+    marks:65
+  },{
+    name:"Areeba",
+    marks:95
+  },{
+    name:"Karan",
+    marks:45
+  }];
+
+  //function to evaluate grades
+  function evaluateGrades(marks){//passing only marks as parameter
+    if(marks>=90){
+      return "A+";
+    }else if(marks>=80 && marks<90){
+      return "A";
+    }else if(marks>=70 && marks<80){
+      return "B";
+    }else if(marks>=60 && marks<70){
+      return "C";
+    }else if(marks>=50 && marks<60){
+      return "D";
+  }}
+
+  //filtering failed students
+  let failedFilteredStudents=testStudents2.filter(items=>
+  items.marks<50);
+  console.log("Failed Students:",failedFilteredStudents);
+
+  //filtering passed students
+  let PassedFilteredStudents=testStudents2.filter(items=>
+    items.marks>=50
+  )
+
+  let mappedPassedStudents=PassedFilteredStudents.map((items)=>{
+    return{
+      name:items.name,
+      result:"Passed",
+      grade:evaluateGrades(items.marks)//passing only marks as parameter e.g object.marks
+    }
+  });
+  console.log("Passed Students:",mappedPassedStudents);
+  
+  
   
   
   
