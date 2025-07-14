@@ -222,6 +222,27 @@ let products = [
   let foundElement=myArray.find(item=> item>3)
   console.log(foundElement);
   
+  //practice problem of find
+  let testStudents3=[{
+    name:"Ali",
+    marks:89
+  },{
+    name:"Sana",
+    marks:35
+  },{
+    name:"John",
+    marks:65
+  },{
+    name:"Areeba",
+    marks:95
+  },{
+    name:"Karan",
+    marks:45
+  }];
+
+  let foundStudent=testStudents3.find(item=> item.marks>60);
+  console.log(foundStudent);
+  
   
   
   
